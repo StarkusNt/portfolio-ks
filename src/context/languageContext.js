@@ -14,6 +14,7 @@ export const LanguageProvider = ({ children }) => {
         return translation[language][key] || key
     }
 
+    
     return (
         <LanguageContext.Provider value={{ language, changeLanguage, t }}>
             {children}
